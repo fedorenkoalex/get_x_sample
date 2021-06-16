@@ -7,5 +7,5 @@ class PostDetails {
 
   PostDetails(this.post, this.comments);
 
-  static PostDetails empty() => PostDetails(Post(0, 0, "", ""), []);
+  static PostDetails empty() => PostDetails(Post(0, "", ""), []);
 }

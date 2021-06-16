@@ -12,7 +12,7 @@ class PostDetailsController extends GetxController {
   final isLoading = false.obs;
   final postDetails = PostDetails.empty().obs;
 
-  Future<void> getPostDetails(String postId) async {
+  Future<void> getPostDetails(int postId) async {
     isLoading.value = true;
     var postDetailsResult = await loginRepository.getPostDetails(postId);
     print("Post Result: ${postDetails.toString()}");

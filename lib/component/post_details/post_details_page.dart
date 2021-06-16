@@ -8,7 +8,7 @@ class PostDetailsPage extends GetView<PostDetailsController> {
   @override
   Widget build(BuildContext context) {
     var postId = Get.arguments[0] as int;
-    controller.getPostDetails(postId.toString());
+    controller.getPostDetails(postId);
     return SafeArea(
       child: Scaffold(
         body: Padding(

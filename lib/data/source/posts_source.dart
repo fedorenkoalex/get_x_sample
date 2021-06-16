@@ -12,9 +12,6 @@ abstract class PostsSource {
   @GET("/posts")
   Future<List<PostResponse>> getPosts();
 
-  @GET("/posts/{postId}")
-  Future<PostResponse> getPost(@Path() String postId);
-
   @GET("/posts/{postId}/comments")
-  Future<List<PostCommentResponse>> getPostComments(@Path() String postId);
+  Future<List<PostCommentResponse>> getPostComments(@Path() int postId);
 }
